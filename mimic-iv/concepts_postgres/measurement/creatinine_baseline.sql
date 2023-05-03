@@ -1,4 +1,5 @@
 -- THIS SCRIPT IS AUTOMATICALLY GENERATED. DO NOT EDIT IT DIRECTLY.
+SET search_path TO mimiciv_derived, mimiciv_hosp, mimiciv_icu, mimiciv_ed;
 DROP TABLE IF EXISTS creatinine_baseline; CREATE TABLE creatinine_baseline AS
 -- This query extracts the serum creatinine baselines of adult patients
 -- on each hospital admission.
