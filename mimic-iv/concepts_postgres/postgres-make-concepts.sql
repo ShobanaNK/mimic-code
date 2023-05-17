@@ -14,38 +14,48 @@
 SET search_path TO mimiciv_derived, mimiciv_hosp, mimiciv_icu, mimiciv_ed;
 
 -- dependencies
-\i demographics/icustay_times.sql
-\i demographics/icustay_hourly.sql
-\i demographics/weight_durations.sql
-\i measurement/urine_output.sql
-\i organfailure/kdigo_uo.sql
+--\i demographics/icustay_times.sql
+--\i demographics/icustay_hourly.sql
+--\i demographics/weight_durations.sql
+--\i measurement/urine_output.sql
+--\i organfailure/kdigo_uo.sql
 
 -- demographics
 \i demographics/age.sql
-\i demographics/icustay_detail.sql
+--\i demographics/icustay_detail.sql
 
 -- measurement
-\i measurement/bg.sql
-\i measurement/blood_differential.sql
-\i measurement/cardiac_marker.sql
-\i measurement/chemistry.sql
-\i measurement/coagulation.sql
-\i measurement/complete_blood_count.sql
+--\i measurement/bg.sql
+\i measurement/bg2.sql
+--\i measurement/blood_differential.sql
+--\i measurement/cardiac_marker.sql
+--\i measurement/chemistry.sql
+--\i measurement/coagulation.sql
+--\i measurement/complete_blood_count.sql
+\i measurement/blood_differential2.sql
+\i measurement/cardiac_marker2.sql
+\i measurement/chemistry2.sql
+\i measurement/coagulation2.sql
+\i measurement/complete_blood_count2.sql
 \i measurement/creatinine_baseline.sql
-\i measurement/enzyme.sql
-\i measurement/gcs.sql
-\i measurement/height.sql
-\i measurement/icp.sql
-\i measurement/inflammation.sql
-\i measurement/oxygen_delivery.sql
-\i measurement/rhythm.sql
-\i measurement/urine_output_rate.sql
-\i measurement/ventilator_setting.sql
-\i measurement/vitalsign.sql
+--\i measurement/enzyme.sql
+\i measurement/enzyme2.sql
+--\i measurement/gcs.sql
+--\i measurement/height.sql
+--\i measurement/icp.sql
+--\i measurement/inflammation.sql
+\i measurement/inflammation2.sql
+--\i measurement/oxygen_delivery.sql
+--\i measurement/rhythm.sql
+--\i measurement/urine_output_rate.sql
+--\i measurement/ventilator_setting.sql
+--\i measurement/vitalsign.sql
 
 -- comorbidity
 \i comorbidity/charlson.sql
+\i comorbidity/r_hosp_dataset.sql
 
+/*
 -- medication
 \i medication/antibiotic.sql
 \i medication/dobutamine.sql
@@ -95,3 +105,4 @@ SET search_path TO mimiciv_derived, mimiciv_hosp, mimiciv_icu, mimiciv_ed;
 \i sepsis/sepsis3.sql
 \i medication/vasoactive_agent.sql
 \i medication/norepinephrine_equivalent_dose.sql
+*/

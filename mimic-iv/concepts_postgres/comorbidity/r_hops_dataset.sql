@@ -113,6 +113,7 @@ SELECT
     , enzyme2.ggt
     , enzyme2.ld_ldh
     , inflammation2.crp
+    , charlson_comorbidity_index
 from
     main
     LEFT JOIN bg2 ON bg2.subject_id = main.subject_id
@@ -132,4 +133,6 @@ from
         AND enzyme2.subject_id = main.subject_id
     LEFT JOIN inflammation2 ON inflammation2.hadm_id = main.hadm_id
         AND inflammation2.subject_id = main.subject_id
+    LEFT JOIN charlson ON charlson.subject_id = main.subject_id
+        AND charlson.hadm_id = main.hadm_id
 
